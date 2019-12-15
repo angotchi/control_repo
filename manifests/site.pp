@@ -1,6 +1,6 @@
 node default  {
 }
-node 'anne.local' {
+node 'master.puppet.vm' {
   include role::master_server
 }
 
