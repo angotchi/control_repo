@@ -1,4 +1,9 @@
-node default  {
+node default {
+  file { '/root/README':
+    ensure => file,
+    content => 'Change the world',
+    owner   => 'root',
+  }
 }
 node 'master.anne.local' {
   include role::master_server
